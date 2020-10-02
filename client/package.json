@@ -1,0 +1,55 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "autoprefixer": "9.8.6",
+    "axios": "^0.20.0",
+    "react": "^16.13.1",
+    "react-cool-img": "^1.2.4",
+    "react-dom": "^16.13.1",
+    "react-dropzone": "^11.2.0",
+    "react-icons": "^3.11.0",
+    "react-images": "^1.1.7",
+    "react-moment": "^0.9.7",
+    "react-redux": "^7.2.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3",
+    "react-slick": "^0.27.11",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-promise": "^0.6.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "yarn run watch:css && react-scripts start",
+    "build": "yarn run build:css && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build:css": "postcss src/assets/tailwind.css -o src/assets/main.css ",
+    "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css "
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "postcss-cli": "^8.0.0",
+    "tailwindcss": "^1.8.10"
+  },
+  "proxy": "http://localhost:5003"
+}
